@@ -18,6 +18,8 @@ body {
   --light-bg-color: #f5f4fa;
   --accent-color: #2196f3;
   --main-icon-color: #afb1b8;
+  --footer-form-border-color: rgba(255, 255, 255, 0.3);
+  --footer-form-text-color: rgba(255, 255, 255, 0.6);
 }
 img {
   display: block;
@@ -56,6 +58,23 @@ p {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button.primary {
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+
+  min-width: 200px;
+  padding: 10px 32px;
 }
 .page-header {
   border-bottom: 1px solid var(--border-forheader-color);
@@ -538,24 +557,41 @@ p {
   background-color: var(--accent-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* Button */
-.button {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  display: inline-block;
-  border-color: transparent;
-  border-radius: 4px;
-  cursor: pointer;
+.footer-form {
+  margin-left: auto;
 }
-.button.primary {
-  color: var(--white-text-color);
-  background-color: var(--accent-color);
+.footer-form-email {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  width: 358px;
+  margin: 0 12px 0 0;
 
-  min-width: 200px;
-  padding: 10px 32px;
+  background-color: var(--dark-bg-color);
+  border: 1px solid var(--footer-form-border-color);
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
+  border-radius: 4px;
+
+  color: var(--footer-form-text-color);
 }
+.footer-form-email::placeholder {
+  color: var(--footer-form-text-color);
+}
+.btn-subscibe.primary {
+  display: inline-flex;
+  align-items: center;
+}
+.btn-subscibe::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-image: url(../images/icons.svg/send.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* Button */
 .btn-portfolio {
   font-weight: 500;
   line-height: 1.625;
