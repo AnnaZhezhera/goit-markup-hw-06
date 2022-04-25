@@ -61,6 +61,46 @@
         </button>
         <div class="hero-backdrop is-hidden" data-modal>
           <div class="hero-modal">
+            <form class="callback-form">
+              <h2 class="form-title">
+                Оставьте свои данные, мы вам перезвоним
+              </h2>
+              <div class="form-field">
+                <label for="user-name">Имя</label>
+                <input type="text" name="name" id="user-name" />
+              </div>
+              <div class="form-field">
+                <label for="user-tel">Телефон</label>
+                <input type="tel" name="tel" id="user-tel" />
+              </div>
+              <div class="form-field">
+                <label for="user-email">Почта</label>
+                <input type="email" name="email" id="user-email" />
+              </div>
+              <div class="form-field">
+                <label for="comment">Комментарий</label>
+                <textarea
+                  name="comment"
+                  id="comment"
+                  placeholder="Введите текст"
+                ></textarea>
+              </div>
+              <div class="form-checkbox">
+                <input
+                  type="checkbox"
+                  name="policy"
+                  id="policy"
+                  class="form-field-policy"
+                />
+                <label for="policy"
+                  >Соглашаюсь с рассылкой и принимаю
+                  <a href="" class="link link-policy"
+                    >Условия договора</a
+                  ></label
+                >
+              </div>
+              <button type="submit" class="button primary">Отправить</button>
+            </form>
             <button class="btn-close-icon" data-modal-close>
               <svg class="close-icon" width="30px" height="30px">
                 <use href="./images/icons.svg/symbol-defs.svg#icon-close"></use>
@@ -440,7 +480,7 @@
             </a>
           </div>
         </div>
-        <div class="footer-form">
+        <form class="footer-form">
           <label for="email" class="caps-text"> Подпишитесь на рассылку </label>
           <input
             type="email"
@@ -449,10 +489,10 @@
             class="footer-form-email"
             placeholder="E-mail"
           />
-          <button type="button" class="button primary btn-subscibe">
+          <button type="submit" class="button primary btn-subscibe">
             Подписаться
           </button>
-        </div>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
