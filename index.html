@@ -62,42 +62,80 @@
         <div class="hero-backdrop is-hidden" data-modal>
           <div class="hero-modal">
             <form class="callback-form">
-              <h2 class="form-title">
-                Оставьте свои данные, мы вам перезвоним
-              </h2>
-              <div class="form-field">
-                <label for="user-name">Имя</label>
-                <input type="text" name="name" id="user-name" />
-              </div>
-              <div class="form-field">
-                <label for="user-tel">Телефон</label>
-                <input type="tel" name="tel" id="user-tel" />
-              </div>
-              <div class="form-field">
-                <label for="user-email">Почта</label>
-                <input type="email" name="email" id="user-email" />
-              </div>
-              <div class="form-field">
-                <label for="comment">Комментарий</label>
-                <textarea
-                  name="comment"
-                  id="comment"
-                  placeholder="Введите текст"
-                ></textarea>
-              </div>
-              <div class="form-checkbox">
-                <input
-                  type="checkbox"
-                  name="policy"
-                  id="policy"
-                  class="form-field-policy"
-                />
-                <label for="policy"
-                  >Соглашаюсь с рассылкой и принимаю
-                  <a href="" class="link link-policy"
-                    >Условия договора</a
-                  ></label
-                >
+              <div role="group" aria-labelledby="contacts-section">
+                <h2 class="form-title" id="contacts-section">
+                  Оставьте свои данные, мы вам перезвоним
+                </h2>
+                <div class="form-field">
+                  <label for="user-name">Имя</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="user-name"
+                    class="form-input"
+                  />
+                  <span>
+                    <svg class="input-icon" width="18px" height="18px">
+                      <use
+                        href="./images/icons.svg/symbol-defs.svg#person-black"
+                      ></use>
+                    </svg>
+                  </span>
+                </div>
+                <div class="form-field">
+                  <label for="user-tel">Телефон</label>
+                  <input
+                    type="tel"
+                    name="tel"
+                    id="user-tel"
+                    class="form-input"
+                  />
+                  <span>
+                    <svg class="input-icon" width="18px" height="18px">
+                      <use
+                        href="./images/icons.svg/symbol-defs.svg#phone-black"
+                      ></use>
+                    </svg>
+                  </span>
+                </div>
+                <div class="form-field">
+                  <label for="user-email">Почта</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="user-email"
+                    class="form-input"
+                  />
+                  <span>
+                    <svg class="input-icon" width="18px" height="18px">
+                      <use
+                        href="./images/icons.svg/symbol-defs.svg#email-black"
+                      ></use>
+                    </svg>
+                  </span>
+                </div>
+                <div class="form-field">
+                  <label for="comment">Комментарий</label>
+                  <textarea
+                    name="comment"
+                    id="comment"
+                    placeholder="Введите текст"
+                  ></textarea>
+                </div>
+                <div class="form-checkbox">
+                  <input
+                    type="checkbox"
+                    name="policy"
+                    id="policy"
+                    class="form-checkbox-policy visually-hidden"
+                  />
+                  <label for="policy" class="checkbox-policy-text"
+                    >Соглашаюсь с рассылкой и принимаю
+                    <a href="" class="link link-policy"
+                      >Условия договора</a
+                    ></label
+                  >
+                </div>
               </div>
               <button type="submit" class="button primary">Отправить</button>
             </form>
