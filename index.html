@@ -61,7 +61,7 @@
         </button>
         <div class="hero-backdrop is-hidden" data-modal>
           <div class="hero-modal">
-            <form class="callback-form">
+            <form class="callback-form" autocomplete="off">
               <div role="group" aria-labelledby="contacts-section">
                 <h2 class="form-title" id="contacts-section">
                   Оставьте свои данные, мы вам перезвоним
@@ -74,13 +74,11 @@
                     id="user-name"
                     class="form-input"
                   />
-                  <span>
-                    <svg class="input-icon" width="18px" height="18px">
-                      <use
-                        href="./images/icons.svg/symbol-defs.svg#person-black"
-                      ></use>
-                    </svg>
-                  </span>
+                  <svg class="input-icon" width="18px" height="18px">
+                    <use
+                      href="./images/icons.svg/symbol-defs.svg#person-black"
+                    ></use>
+                  </svg>
                 </div>
                 <div class="form-field">
                   <label for="user-tel">Телефон</label>
@@ -90,13 +88,11 @@
                     id="user-tel"
                     class="form-input"
                   />
-                  <span>
-                    <svg class="input-icon" width="18px" height="18px">
-                      <use
-                        href="./images/icons.svg/symbol-defs.svg#phone-black"
-                      ></use>
-                    </svg>
-                  </span>
+                  <svg class="input-icon" width="18px" height="18px">
+                    <use
+                      href="./images/icons.svg/symbol-defs.svg#phone-black"
+                    ></use>
+                  </svg>
                 </div>
                 <div class="form-field">
                   <label for="user-email">Почта</label>
@@ -106,13 +102,11 @@
                     id="user-email"
                     class="form-input"
                   />
-                  <span>
-                    <svg class="input-icon" width="18px" height="18px">
-                      <use
-                        href="./images/icons.svg/symbol-defs.svg#email-black"
-                      ></use>
-                    </svg>
-                  </span>
+                  <svg class="input-icon" width="18px" height="18px">
+                    <use
+                      href="./images/icons.svg/symbol-defs.svg#email-black"
+                    ></use>
+                  </svg>
                 </div>
                 <div class="form-field">
                   <label for="comment">Комментарий</label>
@@ -123,20 +117,18 @@
                     placeholder="Введите текст"
                   ></textarea>
                 </div>
-                <div class="form-checkbox">
+                <label class="form-checkbox">
                   <input
                     type="checkbox"
                     name="policy"
-                    id="policy"
-                    class="form-checkbox-policy visually-hidden"
+                    class="form-checkbox-policy"
                   />
-                  <label for="policy" class="checkbox-policy-text"
+                  <span class="checkbox-policy-text"
                     >Соглашаюсь с рассылкой и принимаю
-                    <a href="" class="link link-policy"
-                      >Условия договора</a
-                    ></label
-                  >
-                </div>
+                    <a href="" class="link link-policy">Условия договора</a>
+                  </span>
+                  <span class="checkbox"></span>
+                </label>
               </div>
               <button type="submit" class="button primary">Отправить</button>
             </form>
