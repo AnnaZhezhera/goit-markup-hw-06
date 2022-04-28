@@ -228,8 +228,8 @@ p {
 /* Modal for hero section */
 .hero-modal {
   position: absolute;
-  min-width: 528px;
-  min-height: 581px;
+  max-width: 528px;
+  max-height: 581px;
   padding: 40px;
   background-color: var(--white-bg-color);
 
@@ -264,6 +264,7 @@ p {
   fill: var(--accent-color);
 }
 .form-title {
+  display: block;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -283,15 +284,17 @@ p {
 }
 .form-field label {
   font-size: 12px;
-  line-height: 1.67;
+  line-height: 1.17;
   letter-spacing: 0.01em;
 }
 .form-input {
+  height: 40px;
+  max-width: 528px;
   color: var(--main-text-color);
   padding: 11px 12px 11px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-icon {
   position: absolute;
@@ -304,7 +307,8 @@ p {
   fill: var(--accent-color);
 }
 .form-input:focus-within {
-  outline: 1px solid var(--accent-color);
+  border: 1px solid var(--accent-color);
+  outline: thin dotted transparent;
 }
 .form-field textarea {
   resize: none;
@@ -399,6 +403,9 @@ p {
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+/* .form-checkbox-policy:focus ~ .checkbox {
+  outline: 2.5px solid var(--accent-color);
+} */
 .form-checkbox-policy:checked ~ .checkbox {
   border-color: transparent;
   background-color: var(--accent-color);
@@ -736,6 +743,7 @@ p {
 }
 .footer-form-email:focus-within {
   border: 1px solid var(--border-cards-color);
+  outline: thin dotted transparent;
 }
 .footer-form-email::placeholder {
   color: var(--footer-form-text-color);
