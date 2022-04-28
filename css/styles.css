@@ -65,7 +65,7 @@ p {
   line-height: 1.88;
   letter-spacing: 0.06em;
   display: inline-block;
-  border: 1px solid transparent;
+  border: none;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -229,7 +229,7 @@ p {
 .hero-modal {
   position: absolute;
   max-width: 528px;
-  max-height: 581px;
+  height: 581px;
   padding: 40px;
   background-color: var(--white-bg-color);
 
